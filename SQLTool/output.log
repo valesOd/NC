@@ -1,0 +1,240 @@
+04 Nov 2015 14:23:57 [main] INFO   - try to execute sqlselect table_name from java
+04 Nov 2015 14:25:39 [main] INFO   - execute sql (select table_name from all_tables where owner = 'java')
+04 Nov 2015 14:28:36 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 14:28:36 [main] TRACE  - ______________
+04 Nov 2015 14:28:36 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 14:28:36 [main] TRACE  - |=============|
+04 Nov 2015 14:28:36 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 14:28:36 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 14:28:36 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 14:28:36 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 14:28:36 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 19:09:44 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 19:09:45 [main] TRACE  - ______________
+04 Nov 2015 19:09:45 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 19:09:45 [main] TRACE  - |=============|
+04 Nov 2015 19:09:45 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 19:09:45 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 19:09:45 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 19:09:45 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 19:09:45 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 19:09:54 [main] INFO   - execute sql (select * from objtype)
+04 Nov 2015 19:09:54 [main] TRACE  - __________________________________________________________________________
+04 Nov 2015 19:09:54 [main] TRACE  - | OBJECT_TYPE_ID| PARENT_ID| CODE| NAME                      | DESCRIPTION|
+04 Nov 2015 19:09:54 [main] TRACE  - |=========================================================================|
+04 Nov 2015 19:09:54 [main] TRACE  - | 1             | null     | LOC | Город                | null       |
+04 Nov 2015 19:09:54 [main] TRACE  - | 2             | 1        | DEPT| Подразделение| null       |
+04 Nov 2015 19:09:54 [main] TRACE  - | 3             | null     | EMP | Сотрудник        | null       |
+04 Nov 2015 19:09:54 [main] TRACE  - | 4             | 3        | MGR | Менеджер          | null       |
+04 Nov 2015 19:10:24 [main] INFO   - execute sql (Select * from objects)
+04 Nov 2015 19:10:24 [main] TRACE  - ______________________________________________________________________
+04 Nov 2015 19:10:24 [main] TRACE  - | OBJECT_ID| PARENT_ID| OBJECT_TYPE_ID| NAME             | DESCRIPTION|
+04 Nov 2015 19:10:24 [main] TRACE  - |=====================================================================|
+04 Nov 2015 19:10:24 [main] TRACE  - | 1        | null     | 1             | Odessa           | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 2        | 1        | 2             | Odessa Office    | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 3        | null     | 3             | Petrov Petr      | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 4        | null     | 3             | Sidorov Sidor    | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 5        | null     | 4             | Ivanov Ivan      | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 6        | null     | 3             | test             | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 7        | null     | 3             | test             | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 8        | null     | 3             | test             | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 10       | null     | 3             | Vdovenko Ievgen10| null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 12       | null     | 3             | i am happy       | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 11       | 10       | 3             | just test        | null       |
+04 Nov 2015 19:10:24 [main] TRACE  - | 13       | null     | 3             | Ivanovuch Dima   | null       |
+04 Nov 2015 19:10:26 [main] INFO   - execute sql (Select * from objects)
+04 Nov 2015 19:10:26 [main] TRACE  - ______________________________________________________________________
+04 Nov 2015 19:10:26 [main] TRACE  - | OBJECT_ID| PARENT_ID| OBJECT_TYPE_ID| NAME             | DESCRIPTION|
+04 Nov 2015 19:10:26 [main] TRACE  - |=====================================================================|
+04 Nov 2015 19:10:26 [main] TRACE  - | 1        | null     | 1             | Odessa           | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 2        | 1        | 2             | Odessa Office    | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 3        | null     | 3             | Petrov Petr      | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 4        | null     | 3             | Sidorov Sidor    | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 5        | null     | 4             | Ivanov Ivan      | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 6        | null     | 3             | test             | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 7        | null     | 3             | test             | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 8        | null     | 3             | test             | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 10       | null     | 3             | Vdovenko Ievgen10| null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 12       | null     | 3             | i am happy       | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 11       | 10       | 3             | just test        | null       |
+04 Nov 2015 19:10:26 [main] TRACE  - | 13       | null     | 3             | Ivanovuch Dima   | null       |
+04 Nov 2015 19:12:25 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 19:12:25 [main] TRACE  - ______________
+04 Nov 2015 19:12:25 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 19:12:25 [main] TRACE  - |=============|
+04 Nov 2015 19:12:25 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 19:12:25 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 19:12:25 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 19:12:25 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 19:12:25 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 19:12:28 [main] INFO   - execute sql ()
+04 Nov 2015 19:13:22 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 19:13:23 [main] TRACE  - ______________
+04 Nov 2015 19:13:23 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 19:13:23 [main] TRACE  - |=============|
+04 Nov 2015 19:13:23 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 19:13:23 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 19:13:23 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 19:13:23 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 19:13:23 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 19:13:32 [main] INFO   - execute sql (select * from objtype)
+04 Nov 2015 19:13:32 [main] TRACE  - __________________________________________________________________________
+04 Nov 2015 19:13:32 [main] TRACE  - | OBJECT_TYPE_ID| PARENT_ID| CODE| NAME                      | DESCRIPTION|
+04 Nov 2015 19:13:32 [main] TRACE  - |=========================================================================|
+04 Nov 2015 19:13:32 [main] TRACE  - | 1             | null     | LOC | Город                | null       |
+04 Nov 2015 19:13:32 [main] TRACE  - | 2             | 1        | DEPT| Подразделение| null       |
+04 Nov 2015 19:13:32 [main] TRACE  - | 3             | null     | EMP | Сотрудник        | null       |
+04 Nov 2015 19:13:32 [main] TRACE  - | 4             | 3        | MGR | Менеджер          | null       |
+04 Nov 2015 19:13:38 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 19:55:55 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 19:55:56 [main] INFO   - []
+04 Nov 2015 19:57:47 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 20:02:05 [main] INFO   - execute sql (select * from objtype)
+04 Nov 2015 20:02:06 [main] TRACE  - __________________________________________________________________________
+04 Nov 2015 20:02:06 [main] TRACE  - | OBJECT_TYPE_ID| PARENT_ID| CODE| NAME                      | DESCRIPTION|
+04 Nov 2015 20:02:06 [main] TRACE  - |=========================================================================|
+04 Nov 2015 20:02:06 [main] TRACE  - | 1             | null     | LOC | Город                | null       |
+04 Nov 2015 20:02:06 [main] TRACE  - | 2             | 1        | DEPT| Подразделение| null       |
+04 Nov 2015 20:02:06 [main] TRACE  - | 3             | null     | EMP | Сотрудник        | null       |
+04 Nov 2015 20:02:06 [main] TRACE  - | 4             | 3        | MGR | Менеджер          | null       |
+04 Nov 2015 20:02:09 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 20:02:09 [main] INFO   - No selected row
+04 Nov 2015 20:02:23 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 20:02:23 [main] TRACE  - ______________
+04 Nov 2015 20:02:23 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 20:02:23 [main] TRACE  - |=============|
+04 Nov 2015 20:02:23 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 20:02:23 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 20:02:23 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 20:02:23 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 20:02:23 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 20:02:31 [main] INFO   - execute sql (select * from objreference)
+04 Nov 2015 20:02:31 [main] TRACE  - _______________________________
+04 Nov 2015 20:02:31 [main] TRACE  - | ATTR_ID| REFERENCE| OBJECT_ID|
+04 Nov 2015 20:02:31 [main] TRACE  - |==============================|
+04 Nov 2015 20:02:31 [main] TRACE  - | 7      | 2        | 3        |
+04 Nov 2015 20:02:31 [main] TRACE  - | 7      | 2        | 4        |
+04 Nov 2015 20:02:31 [main] TRACE  - | 7      | 2        | 5        |
+04 Nov 2015 20:02:31 [main] TRACE  - | 8      | 3        | 4        |
+04 Nov 2015 20:02:31 [main] TRACE  - | 8      | 3        | 5        |
+04 Nov 2015 20:02:37 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 20:02:37 [main] INFO   - No selected row
+04 Nov 2015 20:02:38 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 20:02:38 [main] INFO   - No selected row
+04 Nov 2015 20:02:46 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 20:02:46 [main] INFO   - No selected row
+04 Nov 2015 20:02:49 [main] INFO   - execute sql (select * from attributes)
+04 Nov 2015 20:02:49 [main] INFO   - No selected row
+04 Nov 2015 20:03:07 [main] INFO   - execute sql (select * from objects)
+04 Nov 2015 20:03:08 [main] TRACE  - ______________________________________________________________________
+04 Nov 2015 20:03:08 [main] TRACE  - | OBJECT_ID| PARENT_ID| OBJECT_TYPE_ID| NAME             | DESCRIPTION|
+04 Nov 2015 20:03:08 [main] TRACE  - |=====================================================================|
+04 Nov 2015 20:03:08 [main] TRACE  - | 1        | null     | 1             | Odessa           | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 2        | 1        | 2             | Odessa Office    | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 3        | null     | 3             | Petrov Petr      | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 4        | null     | 3             | Sidorov Sidor    | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 5        | null     | 4             | Ivanov Ivan      | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 6        | null     | 3             | test             | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 7        | null     | 3             | test             | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 8        | null     | 3             | test             | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 10       | null     | 3             | Vdovenko Ievgen10| null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 12       | null     | 3             | i am happy       | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 11       | 10       | 3             | just test        | null       |
+04 Nov 2015 20:03:08 [main] TRACE  - | 13       | null     | 3             | Ivanovuch Dima   | null       |
+04 Nov 2015 20:03:17 [main] INFO   - execute sql ()
+04 Nov 2015 20:13:14 [main] ERROR  - Wrong option 5from next options :1) Show available tables 
+2) Select information from available table
+3) Insert custom query
+0) Exit
+
+04 Nov 2015 20:13:14 [main] INFO   - execute sql (null)
+04 Nov 2015 20:14:29 [main] ERROR  - Wrong option 5from next options :1) Show available tables 
+2) Select information from available table
+3) Insert custom query
+0) Exit
+
+04 Nov 2015 20:14:29 [main] INFO   - execute sql (null)
+04 Nov 2015 20:16:11 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 20:16:11 [main] TRACE  - ______________
+04 Nov 2015 20:16:11 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 20:16:11 [main] TRACE  - |=============|
+04 Nov 2015 20:16:11 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 20:16:11 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 20:16:11 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 20:16:11 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 20:16:11 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 20:18:12 [main] ERROR  - Wrong option 5from next options :1) Show available tables 
+2) Select information from available table
+3) Insert custom query
+0) Exit
+
+04 Nov 2015 20:18:12 [main] INFO   - execute sql (null)
+04 Nov 2015 20:19:53 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 20:19:54 [main] TRACE  - ______________
+04 Nov 2015 20:19:54 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 20:19:54 [main] TRACE  - |=============|
+04 Nov 2015 20:19:54 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 20:19:54 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 20:19:54 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 20:19:54 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 20:19:54 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 20:35:37 [main] INFO   - execute sql (select * from obj)
+04 Nov 2015 20:35:38 [main] TRACE  - __________________________________________________________________________________________________________________________________________________________________________________________________________________
+04 Nov 2015 20:35:38 [main] TRACE  - | OBJECT_NAME        | SUBOBJECT_NAME| OBJECT_ID| DATA_OBJECT_ID| OBJECT_TYPE| CREATED              | LAST_DDL_TIME        | TIMESTAMP          | STATUS| TEMPORARY| GENERATED| SECONDARY| NAMESPACE| EDITION_NAME|
+04 Nov 2015 20:35:38 [main] TRACE  - |=================================================================================================================================================================================================================|
+04 Nov 2015 20:35:38 [main] TRACE  - | CON_OBJECT_TYPE_ID | null          | 20643    | 20643         | INDEX      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 4        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | SYS_C007505        | null          | 20644    | 20644         | INDEX      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | Y        | N        | 4        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | STUD_SEQ           | null          | 20640    | null          | SEQUENCE   | 2015-10-30 14:18:46.0| 2015-10-30 14:18:46.0| 2015-10-30:14:18:46| VALID | N        | N        | N        | 1        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | OBJTYPE            | null          | 20642    | 20642         | TABLE      | 2015-10-30 16:11:46.0| 2015-10-30 16:11:46.0| 2015-10-30:16:11:46| VALID | N        | N        | N        | 1        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | ATTRTYPE           | null          | 20645    | 20645         | TABLE      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 1        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | CON_ATTR_ID        | null          | 20646    | 20646         | INDEX      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 4        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | OBJECTS            | null          | 20647    | 20647         | TABLE      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 1        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | CON_OBJECTS_ID     | null          | 20648    | 20648         | INDEX      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 4        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | ATTRIBUTES         | null          | 20649    | 20649         | TABLE      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 1        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | CON_ATTRIBUTES_PK  | null          | 20650    | 20650         | INDEX      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 4        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | OBJREFERENCE       | null          | 20651    | 20651         | TABLE      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 1        | null        |
+04 Nov 2015 20:35:38 [main] TRACE  - | CON_OBJREFERENCE_PK| null          | 20652    | 20652         | INDEX      | 2015-10-30 16:11:47.0| 2015-10-30 16:11:47.0| 2015-10-30:16:11:47| VALID | N        | N        | N        | 4        | null        |
+04 Nov 2015 20:35:50 [main] INFO   - execute sql (selected*)
+04 Nov 2015 20:38:57 [main] INFO   - execute sql (selected2)
+04 Nov 2015 20:38:57 [main] WARN   - unsupported or incorrect query (selected2).Supported only next operations:select, insert, update, delete
+04 Nov 2015 20:40:23 [main] INFO   - execute sql (;)
+04 Nov 2015 20:40:23 [main] WARN   - unsupported or incorrect query (;).Supported only next operations:select, insert, update, delete
+04 Nov 2015 20:40:36 [main] INFO   - execute sql (select * from objects;)
+04 Nov 2015 20:42:16 [main] INFO   - execute sql (select * from objects;)
+04 Nov 2015 20:42:17 [main] WARN   - StatementCallback; bad SQL grammar [select * from objects;]; nested exception is java.sql.SQLSyntaxErrorException: ORA-00911: invalid character
+
+04 Nov 2015 20:43:12 [main] INFO   - execute sql (select * from objectrs;)
+04 Nov 2015 20:43:12 [main] ERROR  - [Ljava.lang.StackTraceElement;@460dafc3
+04 Nov 2015 20:44:54 [main] INFO   - execute sql (select * ;)
+04 Nov 2015 20:44:55 [main] ERROR  - [org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:91), org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73), org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81), org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:416), org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:471), org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:481), org.springframework.jdbc.core.JdbcTemplate.queryForList(JdbcTemplate.java:521), com.vales.general.DAO.selectQuery(DAO.java:80), com.vales.general.DAO.executeQuery(DAO.java:51), com.vales.general.DAO.executeQuery(DAO.java:35), com.vales.general.ConsoleRunner.main(MyMainApp.java:19), sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method), sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57), sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43), java.lang.reflect.Method.invoke(Method.java:606), com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)]
+04 Nov 2015 20:46:46 [main] INFO   - execute sql (selected3)
+04 Nov 2015 20:46:46 [main] WARN   - unsupported or incorrect query (selected3).Supported only next operations:select, insert, update, delete
+04 Nov 2015 20:47:51 [main] INFO   - execute sql (select;)
+04 Nov 2015 20:47:51 [main] WARN   - unsupported or incorrect query (select;).Supported only next operations:select, insert, update, delete
+04 Nov 2015 20:48:18 [main] INFO   - execute sql (select * from ;)
+04 Nov 2015 20:48:19 [main] ERROR  - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select * from ;]; nested exception is java.sql.SQLSyntaxErrorException: ORA-00911: invalid character
+
+04 Nov 2015 21:33:28 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+04 Nov 2015 21:33:30 [main] TRACE  - ______________
+04 Nov 2015 21:33:30 [main] TRACE  - | TABLE_NAME  |
+04 Nov 2015 21:33:30 [main] TRACE  - |=============|
+04 Nov 2015 21:33:30 [main] TRACE  - | OBJTYPE     |
+04 Nov 2015 21:33:30 [main] TRACE  - | ATTRTYPE    |
+04 Nov 2015 21:33:30 [main] TRACE  - | OBJECTS     |
+04 Nov 2015 21:33:30 [main] TRACE  - | ATTRIBUTES  |
+04 Nov 2015 21:33:30 [main] TRACE  - | OBJREFERENCE|
+04 Nov 2015 21:33:35 [main] INFO   - execute sql ()
+05 Nov 2015 11:53:16 [main] INFO   - execute sql (select table_name from all_tables where owner = 'JAVA')
+05 Nov 2015 11:53:17 [main] TRACE  - ______________
+05 Nov 2015 11:53:17 [main] TRACE  - | TABLE_NAME  |
+05 Nov 2015 11:53:17 [main] TRACE  - |=============|
+05 Nov 2015 11:53:17 [main] TRACE  - | OBJTYPE     |
+05 Nov 2015 11:53:17 [main] TRACE  - | ATTRTYPE    |
+05 Nov 2015 11:53:17 [main] TRACE  - | OBJECTS     |
+05 Nov 2015 11:53:17 [main] TRACE  - | ATTRIBUTES  |
+05 Nov 2015 11:53:17 [main] TRACE  - | OBJREFERENCE|
+05 Nov 2015 11:53:21 [main] INFO   - execute sql (select * from attributes)
+05 Nov 2015 11:53:21 [main] INFO   - 0 selected row
+05 Nov 2015 11:53:29 [main] INFO   - execute sql (select * from ojjects)
+05 Nov 2015 11:53:29 [main] ERROR  - org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [select * from ojjects]; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
