@@ -1,52 +1,52 @@
-package com.vales.general;
+package com.vales.general.DAO;
 
+import com.vales.general.Query.LauncherMethods;
+import com.vales.general.Query.Query;
+import com.vales.general.Query.QueryType;
+import com.vales.general.Menu.Table;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.io.IoBuilder;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+
 import javax.sql.DataSource;
 import java.io.PrintStream;
 import java.util.List;
+import java.util.*;
 
 public class DAO {
     private static final Logger GENERAL_LOGGER = LogManager.getLogger(DAO.class);
     private static final PrintStream TABLE_LOGGER = IoBuilder.forLogger(DAO.class).setAutoFlush(true).buildPrintStream();
     private JdbcTemplate jdbcTemplateObject;
+    private Map<QueryType,LauncherMethods> command;
 
+    public void initializationCommand() {
+        command = new EnumMap<>(QueryType.class);
+        LauncherMethods execute = new LauncherMethods() {
+            @Override
+            public boolean runMethod(Query query) {return updateQuery(query.getQuery(), query.getType().toString());
+            }
+        };
+        LauncherMethods select = new LauncherMethods() {
+            @Override
+            public boolean runMethod(Query query) {
+                return selectQuery(query.getQuery());
+            }
+        };
+        command.put(QueryType.SELECT,select);
+        command.put(QueryType.INSERT,execute);
+        command.put(QueryType.UPDATE,execute);
+        command.put(QueryType.DELETE,execute);
+    }
 
     public void setDataSource(DataSource dataSource) {
         this.jdbcTemplateObject = new JdbcTemplate(dataSource);
     }
-    public boolean executeQuery(String query) {
 
-        GENERAL_LOGGER.info("execute sql (" + query + ")");
-        String typeQuery = checkQueryType(query);
-        return typeQuery != null && executeQuery(query, typeQuery);
-    }
-    private static String checkQueryType(String query) {
-        if (query != null && !query.isEmpty()) {
-            String[] result = query.split(" ", 2);
-            result[0] = result[0].toLowerCase();
-            return result[0];
-        }
-        return null;
-    }
-    private boolean executeQuery(String query, String typeQuery) {
-
-        if ("select".equals(typeQuery)) {
-            if (selectQuery(query)) return true;
-
-        } else if ("update".equals(typeQuery)
-                || "delete".equals(typeQuery)
-                || "insert".equals(typeQuery)) {
-
-            return updateQuery(query, typeQuery);
-        } else {
-            System.out.println("unsupported or incorrect query (" + query + ").Supported only next operations:select, insert, update, delete");
-            GENERAL_LOGGER.warn("unsupported or incorrect query (" + query + ").Supported only next operations:select, insert, update, delete");
-        }
-        return false;
+    public boolean executeQuery(Query query){
+        command.get(query.getType()).runMethod(query);
+        return true;
     }
     private boolean updateQuery(String query, String typeQuery) {
         try {
@@ -56,10 +56,10 @@ public class DAO {
             return true;
         } catch (DataAccessException e) {
             GENERAL_LOGGER.warn(e);
-
         }
         return false;
     }
+
     private boolean selectQuery(String query) {
         try {
             List resultList = jdbcTemplateObject.queryForList(query);
@@ -79,6 +79,4 @@ public class DAO {
         }
         return false;
     }
-
-
 }

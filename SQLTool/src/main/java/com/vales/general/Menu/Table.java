@@ -1,10 +1,10 @@
-package com.vales.general;
+package com.vales.general.Menu;
 
 import dnl.utils.text.table.TextTable;
 import java.io.PrintStream;
 import java.util.List;
 
- class Table {
+ public class Table {
    private String[][] data;
    private String[] columnNames;
    private TextTable textTable;
